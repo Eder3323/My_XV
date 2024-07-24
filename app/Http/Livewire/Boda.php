@@ -28,7 +28,7 @@ class Boda extends Component
             'name'=>'required|max:100',
             'people_confirmed'=>'required'
         ]);
-      
+
         Invitado::create([
             'nombre'=>$this->name,
             'num_personas'=>$this->people_confirmed,
@@ -36,5 +36,7 @@ class Boda extends Component
         ]);
         $this->reset(['name', 'people_confirmed', 'people_asist']);
         $this->message_succes='Registro Guardado !!. Gracias';
+        $this->dispatchBrowserEvent('showSuccessMessage', ['message' => '¡Guardado!']);
+
     }
 }
