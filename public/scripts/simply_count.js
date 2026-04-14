@@ -1,6 +1,6 @@
     var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
     simplyCountdown('.simply-countdown-one', {
-        year: 2024,
+        year: 2026,
         month: 6,
         day: 22,
         hours:13,

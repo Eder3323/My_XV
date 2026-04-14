@@ -14,7 +14,7 @@ use App\Http\Livewire\Boda as Boda;
 */
 
 Route::get('/', Boda::class)
-    ->name('Home');
+    ->name('Home2');
 Route::get('/mis-xv-ruby', Boda::class)
     ->name('Home');
 
